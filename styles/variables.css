@@ -1,1 +1,20 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --font-family-main: 'PressStart2P';
+    --font-family-accent: 'Inter-Variable';
+    --font-weight-min: "wght" 400;
+    --font-weight-max: "wght" 700;
+    --font-size-header-title-desktop: clamp(3.0625rem, 2.71047rem + 1.502vw, 4.0625rem);
+    --font-size-header-title-mobile: clamp(2.8125rem, 1.3579rem + 7.273vw, 3.0625rem);
+    --font-size-header-text-desktop: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+    --font-size-text-main: 0.875rem;
+    --background-image: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px), 
+    repeating-linear-gradient(#d3d3d3, transparent 2px), 
+    linear-gradient(#e7e7e7 10%, #1a1a1a 100%);
+    --background-color: #fff;
+    --Themes-mainColor: #000;
+    --button-color: #fff;
+    --heart_contour: #000;
+    --heart_main_color: #000;
+    --heart_accent_color: red;
+}
