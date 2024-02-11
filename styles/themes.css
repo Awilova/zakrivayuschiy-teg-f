@@ -8,24 +8,26 @@
 :root.theme-light {
     --font-weight-min: "wght" 400;
     --font-weight-max: "wght" 700;
-    --Themes-mainColor: #000;
+    --themes-main-color: #000;
     --background-color: #fff;
-    --background-image: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px), 
-    repeating-linear-gradient(#d3d3d3, transparent 2px), 
-    linear-gradient(#e7e7e7 10%, #1a1a1a 100%);
-    --heart_main_color: #000;
+    --background-image: 
+    repeating-linear-gradient(90deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px), 
+    repeating-linear-gradient(#d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px), 
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
+    --heart-main-color: #000;
     --button-color: #fff;
 }
 
 :root.theme-dark {
     --font-weight-min: "wght" 465;
     --font-weight-max: "wght" 785;
-    --Themes-mainColor: #00CC14;
+    --themes-main-color: #00CC14;
     --background-color: #000;
-    --background-image: repeating-linear-gradient(90deg, #000, transparent 2px), 
-    repeating-linear-gradient(#000, transparent 2px), 
+    --background-image: 
+    repeating-linear-gradient(90deg, #000, #000 2px, transparent 2px, transparent 4px), 
+    repeating-linear-gradient(#000, #000 2px, transparent 2px, transparent 4px), 
     linear-gradient(#007f0c 0%, #004306 100%);
-    --heart_main_color: #00CC14;;
+    --heart-main-color: #00CC14;
     --button-color: #00CC14;
 }
 
@@ -33,12 +35,13 @@
     :root {
         --font-weight-min: "wght" 465;
         --font-weight-max: "wght" 785;
-        --Themes-mainColor: #00CC14;
+        --themes-main-color: #00CC14;
         --background-color: #000;
-        --background-image: repeating-linear-gradient(90deg, #000, transparent 2px), 
-        repeating-linear-gradient(#000, transparent 2px), 
+        --background-image: 
+        repeating-linear-gradient(90deg, #000, #000 2px, transparent 2px, transparent 4px), 
+        repeating-linear-gradient(#000, #000 2px, transparent 2px, transparent 4px), 
         linear-gradient(#007f0c 0%, #004306 100%);
-        --heart_main_color: #00CC14;;
+        --heart-main-color: #00CC14;
         --button-color: #00CC14;
     }
 }
