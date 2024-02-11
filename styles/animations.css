@@ -14,14 +14,14 @@
 */
 
 @keyframes symbol {
-    0% {
-      translate: 0;
-    }
-  
-    100% {
-      translate: 4px;
-    }
+  0% {
+    translate: 0;
   }
+
+  100% {
+    translate: 4px;
+  }
+}
 
 @keyframes heart {
   0% {
@@ -46,9 +46,6 @@
 .like-icon {
   width: 39px;
   height: 39px;
-}
-
-.like-icon {
   transition: fill 0.1s;
   transform-origin: center center;
 }

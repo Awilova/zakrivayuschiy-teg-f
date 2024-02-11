@@ -32,15 +32,14 @@
   background-attachment: fixed;
 }
 
-
 .content_width {
   width: clamp(19rem, 13.2143rem + 33.9286vw, 43.75rem);
 }
 
 @media (width <= 375px) {
   .content_width {
-  width: clamp(19rem, 100%, 43.75rem);
-}
+    width: clamp(19rem, 100%, 43.75rem);
+  }
 }
 
 .button {
@@ -104,11 +103,15 @@
   line-height: normal;
 }
 
-  @media (width <= 375px) { 
-   :root {
-    --font-size-header-title: clamp(2.1785rem, -2.9035rem + 25.455vw, 3.0625rem);
-    }
+@media (width <= 375px) {
+  :root {
+    --font-size-header-title: clamp(
+      2.1785rem,
+      -2.9035rem + 25.455vw,
+      3.0625rem
+    );
   }
+}
 
 .header_title {
   display: flex;
@@ -361,8 +364,8 @@
 /*Стили для кнопки сохранения*/
 
 .floppy__section {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .card__floppy-button {
@@ -461,7 +464,8 @@ justify-content: center;
   padding: 10px;
 }
 
-@supports (text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color)) {
+@supports (text-stroke: 1px var(--background-color)) or
+  (-webkit-text-stroke: 1px var(--background-color)) {
   .picture_label {
     -webkit-text-stroke: 1px var(--background-color);
     text-stroke: 1px var(--background-color);
