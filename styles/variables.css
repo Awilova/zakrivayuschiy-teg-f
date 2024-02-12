@@ -17,3 +17,13 @@
     --heart-main-color: #000;
     --heart-accent-color: red;
 }
+
+@media (width <= 375px) {
+    :root {
+      --font-size-header-title: clamp(
+        2.1785rem,
+        -2.9035rem + 25.455vw,
+        3.0625rem
+      );
+    }
+  }

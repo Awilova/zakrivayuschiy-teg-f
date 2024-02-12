@@ -38,7 +38,7 @@
 
 @media (width <= 375px) {
   .content_width {
-    width: clamp(19rem, 100%, 43.75rem);
+    width: 100%;
   }
 }
 
@@ -50,6 +50,7 @@
   font-family: var(--font-family-main), fantasy;
   border: 2px solid var(--themes-main-color);
   position: relative;
+  transition: 0.3s ease;
 }
 
 .button:hover {
@@ -97,20 +98,9 @@
 .header__logo {
   padding: clamp(7.5rem, 7.14797rem + 1.502vw, 8.5rem) 0 20px 0;
   font-size: var(--font-size-header-title);
-  text-decoration: none;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-@media (width <= 375px) {
-  :root {
-    --font-size-header-title: clamp(
-      2.1785rem,
-      -2.9035rem + 25.455vw,
-      3.0625rem
-    );
-  }
 }
 
 .header_title {
@@ -347,9 +337,9 @@
 
 .card__icon-button {
   display: flex;
-  width: 39px;
+  width: 43px;
   height: 38px;
-  border: transparent;
+  border: 2px solid transparent;
   transition: border 0.3s ease;
   padding: 0;
   background-color: transparent;
@@ -376,14 +366,13 @@
   gap: 8px;
   padding: 15px 20px;
   background-color: var(--background-color);
-  transition: 0.5s;
+
   margin: 50px 0 105px;
 }
 
 @media (width <= 375px) {
   .card__floppy-button {
     flex-direction: column-reverse;
-    padding: 15px 20px;
   }
 }
 
@@ -459,7 +448,7 @@
 
 .card__dialog-button {
   width: 100%;
-  font-variation-settings: var(--font-weight-min);
+  font-weight: 400;
   text-transform: uppercase;
   padding: 10px;
 }
